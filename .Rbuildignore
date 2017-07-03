@@ -2,3 +2,4 @@
 ^.*\.Roth$
 ^\.Rproj\.user$
 ^data-raw$
+^\.travis\.yml$
