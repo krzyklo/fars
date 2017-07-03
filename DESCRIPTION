@@ -12,3 +12,9 @@ Suggests: knitr,
     rmarkdown,
     testthat
 VignetteBuilder: knitr
+Imports: dplyr,
+    magrittr,
+    maps,
+    readr,
+    graphics,
+    tidyr
