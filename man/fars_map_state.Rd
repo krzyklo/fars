@@ -35,8 +35,9 @@ Read single FARS file from working directory with given YEAR argument into tbl_d
 }
 }
 \examples{
-fars_map_state(44,2013)
-\dontrun{fars_map_state(2,2015)} # do not works for this year and 2013,2014 as well. Returns: nothing to draw: all regions out of bounds
+\dontrun{ fars_map_state(44,2013)}
+\dontrun{fars_map_state(2,2015)} # do not works for this year and 2013,2014 as well.
+\dontrun{#Returns: nothing to draw: all regions out of bounds}
 
 }
 \keyword{FARS,}

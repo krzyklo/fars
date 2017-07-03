@@ -10,7 +10,7 @@ Coursera, Building R Packages
 fars_read_years(years)
 }
 \arguments{
-\item{years}{A vector of years, provided as a character vector or as an integer vector. 
+\item{years}{A vector of years, provided as a character vector or as an integer vector.
 Provide the years in 4-digit format to ensure the correct file can be found for that year.
 If any of the years is absent from the FARS dataset, a NULL value is returned for that year.
 Files need to be in working directory.}
@@ -29,7 +29,8 @@ After reading the files dplyr with pipes(magrittr) are used to create new column
 Function use make_filename(year) and fars_read(year) functions, and readr, dplyr and  magrittr packages.
 }
 \examples{
-fry<-fars_read_years(c(2013,2014,2015))
+setwd(dirname(system.file("extdata","accident_2013.csv.bz2",package = "fars")))
+fry<-fars_read_years(c(2013))
 str(fry)
 summary(fry)
 fry[1]

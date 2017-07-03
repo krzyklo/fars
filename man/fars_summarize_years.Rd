@@ -10,7 +10,7 @@ Coursera, Building R Packages
 fars_summarize_years(years)
 }
 \arguments{
-\item{years}{A vector of years, provided as integers or 
+\item{years}{A vector of years, provided as integers or
 strings. Only those entries that are present in the FARS data provide any
 valid returned data.}
 }
@@ -20,15 +20,15 @@ A tibble containing the count of fatalities in the FARS data
   a NULL value is returned.
 }
 \description{
-Reading FARS files from working directory with given YEARS argument into tbl_df objects which are then put into list. 
+Reading FARS files from working directory with given YEARS argument into tbl_df objects which are then put into list.
 After reading the files dplyr with pipes(magrittr) are used to summarize how many accidents happended in each month of year.
 }
 \note{
 Uses make_filename(year) and fars_read(year) and fars_read_years(years) functions, and readr, dplyr and  magrittr packages.
 }
 \examples{
-fsy<-fars_summarize_years(c(2013,2014,2015))
-fsy
+\dontrun{fsy<-fars_summarize_years(c(2013,2014,2015))}
+\dontrun{fsy }
 }
 \keyword{FARS,}
 \keyword{NHTSA,}

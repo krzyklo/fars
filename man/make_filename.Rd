@@ -10,7 +10,7 @@ Coursera, Building R Packages
 make_filename(year)
 }
 \arguments{
-\item{year}{A vector of years, provided as integers (1984) 
+\item{year}{A vector of years, provided as integers (1984)
 or strings ("1984", "2001"). Do not provide R 'Date' objects or shortened
 suffixes (eg 84) for a year.}
 }
@@ -21,7 +21,7 @@ A vector of FARS filenames.
 Replacing percent \%d with year (given as input parameter) in string "accident_\%d.csv.bz2"
 }
 \note{
-Year is converted to integer internally. 
+Year is converted to integer internally.
 We don't need to export it, as it's use case is mainly in functions from package
 }
 \examples{

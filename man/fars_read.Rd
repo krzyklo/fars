@@ -21,11 +21,10 @@ The data files are in CSV format, often compressed. Function could read CSV and 
 It has 50 variables=columns (eg. STATE, CITY, COUNTY, DAY, MONTH, YEAR, FATALS etc.), and around 30k records.
 }
 \note{
-Existence of the file is checked at runtime. Internally read_csv function is used, which is part of package "readr", and need to be installed beforehand. 
+Existence of the file is checked at runtime. Internally read_csv function is used, which is part of package "readr", and need to be installed beforehand.
 Second package dependence is dplyr, which is used for formatting output data.frame.
 }
 \examples{
-library(readr)
 \dontrun{fars_file<-fars_read("path_to_your_file")}
 \dontrun{summary(fars_file)}
 
