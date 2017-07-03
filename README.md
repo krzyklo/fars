@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/krzyklo/fars.svg?branch=master)](https://travis-ci.org/krzyklo/fars)
 ---
 title: "Fatality Analysis Reporting System (FARS) with R programming language"
 author: "Krzysztof Klos"
