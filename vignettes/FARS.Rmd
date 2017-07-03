@@ -8,11 +8,15 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+[![Build Status](https://travis-ci.org/krzyklo/fars.svg?branch=master)](https://travis-ci.org/krzyklo/fars)
 
 FARS is a nationwide census providing NHTSA, Congress and the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
 The data files are in CSV format, often compressed. Function could read CSV and BZ2 files as well.
 It has 50 variables=columns (eg. STATE, CITY, COUNTY, DAY, MONTH, YEAR, FATALS etc.), and around 30k records.
 This `html_vignette` for FARS package shows basic usage of the functions provided.
+
+# Installation
+`devtools::install_github("krzyklo/fars")`
 
 ## Vignette Info
 This package provides 5 R language functions for working with FARS data:
@@ -32,7 +36,7 @@ fars2013_path
 getwd()
 ```
 
-Function \code{fars_summarize_years()} shows summary for given years for each month in table.
+Function `fars_summarize_years()` shows summary for given years for each month in table.
 ```{r, echo=FALSE}
 setwd("../inst/extdata")
 knitr::kable(fars_summarize_years(2013))
@@ -40,7 +44,7 @@ knitr::kable(fars_summarize_years(2013))
 ```
 Summary of fatalities for each month of 2013 year. 
 
-Function \code{fars_map_state} shows accidents locations on the map:
+Function `fars_map_state` shows accidents locations on the map:
 ```{r, fig.height=4, fig.width=7, echo=FALSE, fig.cap="Fatalities map for year 2013 and state 1"}
 setwd("../inst/extdata")
 fars_map_state(1,2013)
