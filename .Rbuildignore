@@ -1,0 +1,4 @@
+^.*\.Rproj$
+^.*\.Roth$
+^\.Rproj\.user$
+^data-raw$
