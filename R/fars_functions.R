@@ -135,6 +135,10 @@ fars_read_years <- function(years) {
 #' \dontrun{fsy<-fars_summarize_years(c(2013,2014,2015))}
 #' \dontrun{fsy }
 fars_summarize_years <- function(years) {
+  year<-NULL
+  MONTH<-NULL
+  n<-NULL
+
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
     dplyr::group_by(year, MONTH) %>%
@@ -184,6 +188,7 @@ fars_map_state <- function(state.num, year) {
   filename <- make_filename(year)
   data <- fars_read(filename)
   state.num <- as.integer(state.num)
+  STATE<- NULL
 
   if(!(state.num %in% unique(data$STATE)))
     stop("invalid STATE number: ", state.num)
